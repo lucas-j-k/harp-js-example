@@ -1,0 +1,241 @@
+* {
+	font-family: 'Ovo', serif;
+}
+
+
+
+//Homepage
+
+.homepage-splash {
+	background-image: url("../img/homepagesplash.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	height:100%;
+	background-position:center top;
+
+}
+
+
+
+.homepage-image-overlay {
+	background-color: rgba(0,0,0,0.9);
+	margin:auto;
+	padding:15px;
+	width:80%;
+
+}
+
+
+
+.homepage-image-overlay p, .homepage-image-overlay h1 {
+	color:white;
+	text-align: center;
+}
+
+.homepage-image-overlay__title {
+	font-size: 40px;
+}
+
+.homepage-image-overlay__subtitle {
+	border-top: 1px solid white;
+	margin-top:5px;
+}
+
+.homepage-image-overlay__author {
+	color:rgba(255,255,255,0.6);
+	margin-top:10px;
+	font-size: 24px;
+	display: block;
+}
+
+
+.homepage__intro-paragraph {
+
+}
+
+.homepage__intro-wrapper {
+	text-align:center;
+}
+
+
+
+// Medium screen sizes
+@media (min-width: 768px) {
+	.homepage-image-overlay {
+		width:40%;
+		padding:40px 20px;
+
+	}
+}
+
+
+//Header bar
+.header-bar {
+	background-color: rgba(0,0,0,0.9);
+}
+
+
+// Chapter list styling
+
+
+//Mobile base styles for chapter list:
+
+
+.chapters-list {
+	margin-bottom: 10px;
+}
+
+.chapters-list__item {
+	background-color: rgba(0,0,0,0.9);
+
+	&:hover {
+		background-color: white;
+	}
+
+	a {
+		color: white;
+	}
+
+	&:hover a {
+		color:black;
+	}
+}
+
+// Medium screen sizes for chapter list
+@media (min-width: 768px) {
+	.chapters-list {
+		width: 40%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		border:0;
+	}
+	
+	//Only styles for the chap. list when it appears in the blog style template in /chapters/
+	.chapter-links-wrapper--chapters-template .chapters-list {
+		width:100%;	
+	}
+
+	//The wrapper for the chapter links within the blog style template:
+	.chapter-links-wrapper--chapters-template {
+		padding-top:10px;
+		background-color: rgba(0,0,0,0.0);
+		border-left:1px solid black;
+	}
+}
+
+
+
+//Styling for the chapter pages
+.chapter-content {
+	padding-top: 20px;
+
+	//Into the markdown...
+	p {
+		padding-left: 20px;
+		width:40%;
+		margin:20px auto;
+	}
+}
+
+
+
+.chapter-content__title-banner {
+	position:relative;
+	margin-bottom: 20px;
+}
+
+.chapter-content__title-heading {
+	position: absolute;
+	width:100%;
+	color:white;
+	background-color: rgba(0,0,0,0.85);
+	padding:15px;
+	text-align: center;
+	font-size:25px;
+}
+
+.chapter-content__banner-img {
+	width:100%;
+}
+
+
+
+
+
+.footer {
+	background-color: rgba(0,0,0,0.9);
+	padding: 10px;
+}
+
+.footer__text {
+	color: white;
+	font-size: 15px;
+}
+
+
+//Vignette styling for panels of text outside of chapters
+.vignette {
+	width:80%;
+	margin: 10px auto;
+	border-radius: 10px;
+	padding:15px;
+	border: 1px solid rgba(0,0,0,0.4);
+}
+
+//Medium screens for vignette:
+@media (min-width: 768px) {
+	.vignette {
+		width:50%;
+		margin-bottom: 25px;
+	}
+}
+
+
+//About page specific styles
+.about-splash {
+	background: url("../img/aboutsplash.jpg");
+	background-size: cover;
+	background-position: top center;
+	width:100%;
+	height:300px;
+}
+
+.about-splash__heading {
+	color: white;
+	background-color: rgba(0,0,0,0.9);
+	width:80%;
+	margin:auto;
+	text-align: center;
+	padding:40px 20px;
+
+
+}
+
+.about-page__link-list-title {
+	text-align: center;
+	font-size: 22px;
+}
+
+.about-page__link-list {
+	list-style:none;
+	padding:0px;
+}
+
+.about-page__link-list-item {
+	text-align: center;
+}
+
+
+// Medium screen sizes for about page
+@media (min-width: 768px) {
+	.about-splash__heading {
+		width:40%;
+
+	}
+
+	.about-page__link-list {
+		width:60%;
+		margin:auto;
+	}
+
+}

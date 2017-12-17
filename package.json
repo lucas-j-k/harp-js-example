@@ -1,0 +1,18 @@
+{
+  "name": "mariner-harp",
+  "version": "1.0.0",
+  "description": "A simple site using the content of the Rime of the Ancient Mariner to test out the HarpJS SSG",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "harp",
+    "harpjs"
+  ],
+  "author": "Luke",
+  "license": "ISC",
+  "devDependencies": {
+    "harp": "^0.25.0"
+  }
+}

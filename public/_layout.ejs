@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <!-- import the head partial -->
+    <%- partial("partials/_head") %>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+
+      <!-- pull in the header/navbar partial: -->
+      <%- partial("partials/_header") %>
+
+      <!-- Pull in the body content -->
+      <%- yield %>
+
+      <!-- Pull in the generated chapter links, in a new row. The chapter links are wrapped in a div that is different between the root template and the chapters (posts) specific template, so we can style the two lists differently -->
+      <div class="row">
+        <div class="chapter-links-wrapper--root-template col">
+          <%- partial("partials/_chapter-links") %>
+        </div>
+      </div> <!-- end of row -->
+
+      <!-- pull in the footer -->
+      <%- partial("partials/_footer") %>
+
+
+    </div> <!-- end container -->
+  </body>
+</html>

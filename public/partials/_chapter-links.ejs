@@ -1,0 +1,8 @@
+<ul class="list-group chapters-list">
+	<% for(var slug in public.chapters._data){ %>
+	  <li class="list-group-item text-center chapters-list__item">
+		  <a href="/chapters/<%= slug %>" class="chapters-list__link"><%= public.chapters._data[slug].title %></a>
+	  </li>
+	  <%- partial("chapters/" + slug) %>
+	<% }; %>
+</ul>
